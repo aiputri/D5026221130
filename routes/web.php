@@ -48,3 +48,6 @@ Route::get('/style', function () {
 Route::get('/validasi', function () {
     return view('validasi');
 });
+
+Route::get('perkalian','MahasiswaController@index');
+Route::get('show','MahasiswaController@showBlog');
