@@ -1,0 +1,23 @@
+h3 {
+    color: rgb(102, 255, 0);
+
+}
+
+p {
+    color: rgb(42, 165, 155);
+    text-align: justify;
+}
+
+body {
+    background: rgb(220, 245, 239);
+}
+
+.ratakanan {
+    text-align: right;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.kotaku1 {
+    border-style: solid;
+}

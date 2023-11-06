@@ -1,0 +1,51 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    display: flex; 
+    background-image: linear-gradient(to right bottom, white, rgb(184, 163, 222));
+}
+.putri_div1 {
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+}
+.putri_img {
+    border-radius: 50%;
+    width: 15%;
+}
+.putri_hrefbutton {
+    background-color: rgb(110, 50, 230);
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    transition: background-color 0.35s;
+}
+.putri_span {
+    font-size: small;
+    font-weight: bolder;
+}
+a:hover {
+    background-color: transparent;
+    border-width: medium;
+    border-style: solid;
+    border-color: rgb(110, 50, 230);
+    color: black;
+}
+.putri_icon {
+    width: 33px;
+}
+.putri_buttonspan {
+    flex-grow:1;
+    text-align: center;
+    font-weight: 450;
+}
+.putri_iconhref {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
