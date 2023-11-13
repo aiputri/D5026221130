@@ -4,11 +4,11 @@
     <link rel="stylesheet" href="mystyle.css">
     <style>
         h2 {
-            color: rgb(136, 255, 0); 
+            color: rgb(90, 98, 238);
             text-align:center;
             text-decoration: line-through;
-        } 
-    
+        }
+
     </style>
 </head>
 <body>

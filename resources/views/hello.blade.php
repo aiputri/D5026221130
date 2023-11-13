@@ -9,9 +9,9 @@
             <p>Hallo Apa Kabar?</p>
             Hallo Apa Kabar?<br>
             <a href="https://www.its.ac.id/">Web ITS</a>
-            | 
-            <a href="https://www.detik.com/" target="_blank">Detik.com </a> 
-            | 
+            |
+            <a href="https://www.detik.com/" target="_blank">Detik.com </a>
+            |
             <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML</a>
             <br>
             <img src="fotoku.jpg">
