@@ -29,7 +29,7 @@ Route::get('berita', function () {
     return view('berita');
 });
 
-Route::get('blog', function () {
+Route::get('/blog2', function () {
     return view('blog');
 });
 
@@ -69,5 +69,15 @@ Route::get('validasi', function () {
     return view('validasi');
 });
 
-Route::get('perkalian','MahasiswaController@index');
-Route::get('show','MahasiswaController@showBlog');
+Route::get('perkalian','App\Http\Controllers\MahasiswaController@index');
+Route::get('show','App\Http\Controllers\MahasiswaController@showBlog');
+
+Route::get('/pegawai/{nama}','App\Http\Controllers\MahasiswaController@shownama');
+
+Route::get('/formulir', 'App\Http\Controllers\MahasiswaController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\MahasiswaController@proses');
+
+// route blog
+Route::get('/blog', 'App\Http\Controllers\BlogController@home');
+Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
+Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
