@@ -81,3 +81,12 @@ Route::post('/formulir/proses', 'App\Http\Controllers\MahasiswaController@proses
 Route::get('/blog', 'App\Http\Controllers\BlogController@home');
 Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
 Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@kontak');
+
+// route CRUD
+Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
+Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
+Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
+Route::get('/pegawai/edit/{id}','App\Http\Controllers\PegawaiController@edit');
+Route::post('/pegawai/update','App\Http\Controllers\PegawaiController@update');
+Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus');
+
