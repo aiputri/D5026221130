@@ -95,8 +95,8 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 //route CRUD NilaiKuliah
 // halaman utama database nilaikuliah
-Route::get('/nilaikuliah','App\Http\Controllers\LatihanEASController@index');
+Route::get('/nilaikuliah','App\Http\Controllers\LatihanEasController@index');
 
 // tambah utama database nilaikuliah
-Route::post('/nilaikuliah/store','App\Http\Controllers\LatihanEASController@store');
-Route::get('/nilaikuliah/tambah','App\Http\Controllers\LatihanEASController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\LatihanEasController@store');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\LatihanEasController@tambah');
