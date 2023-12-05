@@ -14,31 +14,31 @@
 	<form action="/pegawai/update" method="post" class="form-horizontal">
 		{{csrf_field()}} 
 		<input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/>
-        <div class="form-group">
-            <label for="nama" class="col-sm-2 control-label">Nama</label>
+        <div class="input-group mb-3">
+            <label for="nama" class="input-group-text col-sm-1 control-label">Nama</label>
             <div class="col-sm-10">
                 <input type="text" required="required" name="nama" class="form-control" value="{{ $p->pegawai_nama }}">
             </div>
         </div>
-        <div class="form-group">
-            <label for="jabatan" class="col-sm-2 control-label">Jabatan</label>
+        <div class="input-group mb-3">
+            <label for="jabatan" class="input-group-text col-sm-1 control-label">Jabatan</label>
             <div class="col-sm-10">
                 <input type="text" required="required" name="jabatan" class="form-control" value="{{ $p->pegawai_jabatan }}">
             </div>
         </div>
-        <div class="form-group">
-            <label for="umur" class="col-sm-2 control-label">Umur</label>
+        <div class="input-group mb-3">
+            <label for="umur" class="input-group-text col-sm-1 control-label">Umur</label>
             <div class="col-sm-10">
                 <input type="number" required="required" name="umur" class="form-control" value="{{ $p->pegawai_umur }}">
             </div>
         </div>
-        <div class="form-group">
-            <label for="alamat" class="col-sm-2 control-label">Alamat</label>
+        <div class="input-group mb-3">
+            <label for="alamat" class="input-group-text col-sm-1 control-label">Alamat</label>
             <div class="col-sm-10">
                 <textarea required="required" name="alamat" class="form-control">{{ $p->pegawai_alamat }}</textarea>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group row">
             <div class="col-sm-offset-2 col-sm-10">
                 <input type="submit" value="Simpan Data" class="btn btn-primary">
             </div>

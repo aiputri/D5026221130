@@ -72,7 +72,7 @@ Route::get('validasi', function () {
 Route::get('perkalian','App\Http\Controllers\MahasiswaController@index');
 Route::get('show','App\Http\Controllers\MahasiswaController@showBlog');
 
-Route::get('/pegawai/{nama}','App\Http\Controllers\MahasiswaController@shownama');
+//Route::get('/pegawai/{nama}','App\Http\Controllers\MahasiswaController@shownama');
 
 Route::get('/formulir', 'App\Http\Controllers\MahasiswaController@formulir');
 Route::post('/formulir/proses', 'App\Http\Controllers\MahasiswaController@proses');
@@ -92,3 +92,11 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+//route CRUD NilaiKuliah
+// halaman utama database nilaikuliah
+Route::get('/nilaikuliah','App\Http\Controllers\LatihanEASController@index');
+
+// tambah utama database nilaikuliah
+Route::post('/nilaikuliah/store','App\Http\Controllers\LatihanEASController@store');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\LatihanEASController@tambah');
