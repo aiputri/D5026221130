@@ -29,6 +29,7 @@ class LatihanEasController extends Controller
     {
         // insert data ke table nilaikuliah
         DB::table('nilaikuliah')->insert([
+            'ID' => $request->ID,
             'NRP' => $request->NRP,
             'NilaiAngka' => $request->NilaiAngka,
             'SKS' => $request->SKS,

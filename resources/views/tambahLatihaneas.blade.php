@@ -11,24 +11,24 @@
 
 	<form action="/nilaikuliah/store" method="post" class="form-horizontal">
 		{{ csrf_field() }}
-        <div class="form-group">
+        <div class="form-group row">
             <label class="col-sm-2 control-label">NRP</label>
             <div class="col-6">
                 <input name="NRP" type="number" class="form-control" placeholder="Masukkan NRP ..." required="required">
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
             <label for="NilaiAngka" class="col-sm-2 control-label">Nilai Angka</label>
             <div class="col-6">
                 <input name="NilaiAngka" type="number" class="form-control" id="NilaiAngka" placeholder="Masukkan nilai angka ..." required="required">
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
             <label for="SKS" class="col-sm-2 control-label">SKS</label>
             <div class="col-6">
-                <input name="SKS" type="number" class="form-control" id="SKS" placeholder="Masukkan SKS..." required="required">
+                <input name="SKS" type="number" class="form-control" id="SKS" placeholder="Masukkan SKS ..." required="required">
             </div>
         </div>
 		<input type="submit" class='btn btn-primary' value="Tambah Data">

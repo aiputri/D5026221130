@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\LatihanEasController;
+use App\Http\Controllers\HewanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -98,5 +103,27 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::get('/nilaikuliah','App\Http\Controllers\LatihanEasController@index');
 
 // tambah utama database nilaikuliah
-Route::post('/nilaikuliah/store','App\Http\Controllers\LatihanEasController@store');
 Route::get('/nilaikuliah/tambah','App\Http\Controllers\LatihanEasController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\LatihanEasController@store');
+
+// route CRUD Database Hewan
+// halaman utama database hewan
+Route::get('/database-hewan','App\Http\Controllers\HewanController@index');
+
+// tambah utama database hewan
+Route::get('/database-hewan/tambah','App\Http\Controllers\HewanController@tambah');
+Route::post('/database-hewan/store','App\Http\Controllers\HewanController@store');
+
+// edit data hewan
+Route::get('/database-hewan/edit/{id}','App\Http\Controllers\HewanController@edit');
+Route::post('/database-hewan/update','App\Http\Controllers\HewanController@update');
+
+// hapus data hewan
+Route::get('/database-hewan/hapus/{id}','App\Http\Controllers\HewanController@hapus');
+
+// cari hewan
+Route::get('/database-hewan/cari','App\Http\Controllers\HewanController@cari');
+
+// view hewan
+Route::get('/database-hewan/view/{id}','App\Http\Controllers\HewanController@view');
+

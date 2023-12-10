@@ -9,6 +9,8 @@
 
 	<br/>
 	<br/>
+    <br/>
+
     @endsection
 
     @section('konten')
@@ -46,7 +48,7 @@
 			<td>{{ $n->NilaiAngka }}</td>
 			<td>{{ $n->SKS }}</td>
 
-            <td>{{ angkaToHuruf($n->NilaiAngka) }}</td>
+            <td>{{angkaToHuruf($n->NilaiAngka)}}</td>
             <td>{{$n->NilaiAngka * $n->SKS }}</td>
 			{{-- <td class="d-flex">
                 <a href="/nilaikuliah/view/{{ $p->nilaikuliah_id }}"  class="btn btn-success m-1">View</a>
@@ -55,6 +57,6 @@
 		@endforeach
 	</table>
     </div>
-    
+
 {{$nilaikuliah-> links()}}
 @endsection
