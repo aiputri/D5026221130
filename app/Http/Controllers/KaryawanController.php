@@ -29,19 +29,30 @@ class KaryawanController extends Controller
 
     }
 
-    // method untuk insert data ke table karyawan
     public function store(Request $request)
     {
-        // insert data ke table karyawan
+        $request->validate([
+            'kodepegawai' => [
+                'required',
+                'integer',
+                DB::unique('kodepegawai'),
+            ],
+            'namalengkap' => 'required',
+            'divisi' => 'required',
+            'departemen' => 'required',
+        ], [
+            'kodepegawai.unique' => 'Kode Pegawai sudah ada, silakan isi ulang.',
+        ]);
+
+        // Validasi berhasil, maka simpan data
         DB::table('karyawan')->insert([
             'kodepegawai' => $request->kodepegawai,
-            'namalengkap' => $request->namalengkap,
+            'namalengkap' => strtoupper($request->namalengkap),
             'divisi' => $request->divisi,
-            'departemen' => $request->departemen
+            'departemen' => strtolower($request->departemen),
         ]);
-        // alihkan halaman ke halaman karyawan
-        return redirect('/karyawan');
 
+        return redirect('/karyawan')->with('success', 'Data berhasil disimpan.');
     }
 
     // method untuk edit data karyawan
