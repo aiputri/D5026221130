@@ -33,16 +33,16 @@
             </div>
         </div>
 
-        <div class="input-group mb-3">
+        <!--<div class="input-group mb-3">
             <label for="tersedia" class="col-sm-2 control-label">Apakah Tersedia</label>
             <div class="col-sm-6">
                 <select name="tersedia" class="form-select form-control" style="width:100%" required>
-                    <option value=" ">Pilih Ketersediaan Hewan</option>
-                    <option value="Y">Tersedia</option>
-                    <option value="N">Tidak Tersedia</option>
+                    <option value="">Pilih Ketersediaan Hewan</option>
+                    <option value="1">Tersedia</option>
+                    <option value="0">Tidak Tersedia</option>
                 </select>
             </div>
-        </div>
+        </div>-->
 
         <div class="form-group row">
             <div class="col-sm-offset-2 col-sm-10">

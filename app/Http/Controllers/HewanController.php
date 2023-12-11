@@ -36,7 +36,7 @@ class HewanController extends Controller
         DB::table('hewan')->insert([
             'namahewan' => $request->namahewan,
             'jumlahhewan' => $request->jumlahhewan,
-            'tersedia' => ($request->jumlahhewan > 0) ? 'y' : 'n'
+            'tersedia' => ($request->jumlahhewan > 0) ? '1' : '0'
         ]);
         // alihkan halaman ke halaman hewan
         return redirect('/database-hewan');
@@ -46,10 +46,10 @@ class HewanController extends Controller
     // Cara kedua dengan if else dibawah ini
     // public function store(Request $request){
     //     // insert data ke table hewan
-    //     $tersedia = 'n'; // default value
+    //     $tersedia = '0'; // default value
 
     //     if ($request->jumlahhewan > 0) {
-    //         $tersedia = 'y';
+    //         $tersedia = '1';
     //     }
 
     //     DB::table('hewan')->insert([
@@ -82,7 +82,7 @@ class HewanController extends Controller
         DB::table('hewan')->where('kodehewan',$request->id)->update([
             'namahewan' => $request->namahewan,
             'jumlahhewan' => $request->jumlahhewan,
-            'tersedia' => ($request->jumlahhewan > 0) ? 'y' : 'n'
+            'tersedia' => ($request->jumlahhewan > 0) ? '1' : '0'
         ]);
         // alihkan halaman ke halaman hewan
         return redirect('/database-hewan');

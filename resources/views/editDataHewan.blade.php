@@ -32,12 +32,6 @@
                 <input type="number" required="required" name="jumlahhewan" class="form-control" value="{{ $p->jumlahhewan}}">
             </div>
         </div>
-        <div class="input-group mb-3">
-            <label for="tersedia" class="col-sm-2 control-label">Apakah Tersedia?</label>
-            <div class="col-sm-6">
-                <input type="text" required="required" name="tersedia" class="form-control" value="{{ $p->tersedia == 'Y' ? 'Tersedia' : 'Tidak Tersedia' }}">
-            </div>
-        </div>
 
         <div class="form-group row">
             <div class="col-sm-offset-2 col-sm-10">

@@ -35,11 +35,11 @@
 			<td>{{ $p->kodehewan}}</td><td>
 			<td>{{ $p->namahewan}}</td><td>
 			<td>{{ $p->jumlahhewan}}</td><td>
-			<td>
-                @if($p->tersedia == 'Y')
-                    Tersedia <input type="checkbox" checked disabled>
-                @elseif($p->tersedia == 'N')
-                    Tidak Tersedia <input type="checkbox" disabled>
+			<td style="text-align: center;">
+                @if($p->tersedia == '1' && $p->jumlahhewan > '0')
+                    <input type="checkbox" checked disabled style="background-color: blue;">
+                @elseif($p->tersedia == '0')
+                    <input type="checkbox" disabled style="background-color: orange;">
                 @endif
             </td>
             <td><td><td><td>

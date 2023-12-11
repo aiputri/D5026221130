@@ -43,7 +43,7 @@
                 <div class="form-group">
                     <label for="tersedia" class="col-sm-4 control-label">Apakah Tersedia?</label>
                     <div class="col-sm-10">
-                        <input name="tersedia" type="text" class="form-control" id="tersedia" readonly value="{{ $p->tersedia == 'Y' ? 'Tersedia' : 'Tidak Tersedia' }}">
+                        <input name="tersedia" type="text" class="form-control" id="tersedia" readonly value="{{ $p->tersedia == '1' && $p->jumlahhewan > '0' ? 'Tersedia' : 'Tidak Tersedia' }}">
                     </div>
                 </div>
     
