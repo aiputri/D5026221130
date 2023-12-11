@@ -15,7 +15,7 @@
         <div class = "input-group mb-3">
             <label for = "kodepegawai" class = "col-sm-2 control-label">Kode Pegawai</label>
             <div class = "col-sm-6" {{ $errors->get('studentname') ? 'has-error' : '' }}>
-                <input type="text" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Nama Karyawan..." required>
+                <input type="text" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Kode Karyawan..." required>
                 @foreach($errors->get('kodepegawai') as $error)
                 <span class="help-block">{{ $error }}</span>
                 @endforeach
