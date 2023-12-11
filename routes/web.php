@@ -6,7 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\LatihanEasController;
 use App\Http\Controllers\HewanController;
-//use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\KaryawanController;
 
 /*
 |--------------------------------------------------------------------------
