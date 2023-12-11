@@ -12,21 +12,20 @@
 
 	<form action="/karyawan/store" method="post" class="form-horizontal">
         {{ csrf_field() }}
-        <div class="input-group mb-3">
-            <label for="kodepegawai" class="col-sm-2 control-label">Kode Pegawai</label>
-            <div class="col-sm-6">
-                <input type="number" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Kode Karyawan..." required>
-                @if($errors->has('kodepegawai'))
-                    <span class="text-danger">{{ $errors->first('kodepegawai') }}</span>
-                @endif
+        <div class = "input-group mb-3">
+            <label for = "kodepegawai" class = "col-sm-2 control-label">Kode Pegawai</label>
+            <div class = "col-sm-6" {{ $errors->get('studentname') ? 'has-error' : '' }}>
+                <input type="text" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Nama Karyawan..." required>
+                @foreach($errors->get('kodepegawai') as $error)
+                <span class="help-block">{{ $error }}</span>
+                @endforeach
             </div>
         </div>
-        
 
         <div class="input-group mb-3">
             <label for="namalengkap" class="col-sm-2 control-label">Nama Lengkap</label>
             <div class="col-sm-6">
-                <input type="text" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Nama Karyawan..." required>
+                <input type="text" name="namalengkap" class="form-control" id="namalengkap" placeholder="Masukan Nama Karyawan..." required>
             </div>
         </div>
 
