@@ -1,6 +1,5 @@
 @extends('master2')
 
-
 @section('konten')
 	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
 	<h3>Tambah Data Karyawan</h3>
@@ -10,17 +9,26 @@
 	<br/>
 	<br/>
 
-	<form action="/karyawan/store" method="post" class="form-horizontal">
-        {{ csrf_field() }}
-        <div class = "input-group mb-3">
-            <label for = "kodepegawai" class = "col-sm-2 control-label">Kode Pegawai</label>
-            <div class = "col-sm-6" {{ $errors->get('studentname') ? 'has-error' : '' }}>
-                <input type="text" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Kode Karyawan..." required>
-                @foreach($errors->get('kodepegawai') as $error)
-                <span class="help-block">{{ $error }}</span>
-                @endforeach
-            </div>
+    @if(session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
         </div>
+    @endif
+
+    @if(session('success'))
+        <div class="alert alert-primary">
+            {{ session('success') }}
+        </div>
+    @endif
+
+	<form action="/karyawan/store" method="post" class="form-horizontal">
+        {{csrf_field()}}  
+        <div class="input-group mb-3">
+            <label for="kodepegawai" class="col-sm-2 control-label">Kode Pegawai</label>
+            <div class="col-sm-6">
+                <input type="number" name="kodepegawai" class="form-control" id="kodepegawai" placeholder="Masukan Kode Karyawan..." required>
+            </div>
+        </div>        
 
         <div class="input-group mb-3">
             <label for="namalengkap" class="col-sm-2 control-label">Nama Lengkap</label>

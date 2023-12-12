@@ -13,7 +13,7 @@ class KaryawanController extends Controller
     	// mengambil data dari table karyawan
     	//$karyawan = DB::table('karyawan')->get();
 
-        $karyawan = DB::table('karyawan')->paginate();
+        $karyawan = DB::table('karyawan')->paginate(5);
 
     	// mengirim data karyawan ke view index
     	return view('indexKaryawan',['karyawan' => $karyawan]);
@@ -32,45 +32,27 @@ class KaryawanController extends Controller
     // method untuk insert data ke table karyawan
     public function store(Request $request)
     {
-        // insert data ke table karyawan
+        // Validasi input
+        $existKaryawan = DB::table('karyawan')
+                            ->where('kodepegawai', $request->kodepegawai)
+                            ->first();
+
+        if ($existKaryawan) {
+        return redirect('/karyawan')->with('error', 'Kode karyawan sudah ada!');
+        }
+
+        // Jika validasi berhasil, simpan data ke database
         DB::table('karyawan')->insert([
             'kodepegawai' => $request->kodepegawai,
             'namalengkap' => $request->namalengkap,
             'divisi' => $request->divisi,
             'departemen' => $request->departemen
         ]);
-        // alihkan halaman ke halaman karyawan
-        return redirect('/karyawan');
 
+        // Alihkan halaman ke halaman karyawan
+        return redirect('/karyawan')->with('success', 'Data berhasil disimpan!');
     }
-
-    // method untuk edit data karyawan
-    public function edit($id)
-    {
-        // mengambil data karyawan berdasarkan id yang dipilih
-        $karyawan = DB::table('karyawan')
-                    ->where('kodepegawai',$id)
-                    ->get();
-
-        // passing data karyawan yang didapat ke view edit.blade.php
-        return view('editKaryawan',['karyawan' => $karyawan]);
-
-    }
-
-    // update data karyawan
-    public function update(Request $request)
-    {
-        // update data karyawan
-        DB::table('karyawan')->where('kodepegawai',$request->id)->update([
-            'kodepegawai' => $request->kodepegawai,
-            'namalengkap' => $request->namalengkap,
-            'divisi' => $request->divisi,
-            'departemen' => $request->departemen
-        ]);
-        // alihkan halaman ke halaman karyawan
-        return redirect('/karyawan');
-    }
-
+    
     // method untuk hapus data karyawan
     public function hapus($id)
     {
@@ -95,17 +77,6 @@ class KaryawanController extends Controller
 		return view('indexKaryawan',['karyawan' => $karyawan]);
 
 	}
-
-    public function view($id)
-    {
-        // melihat data karyawan berdasarkan id yang dipilih
-        $karyawan = DB::table('karyawan')
-                    ->where('kodepegawai',$id)
-                    ->get();
-
-        // mengirim data karyawan ke view
-        return view('viewKaryawan',['karyawan' => $karyawan]);
-    }
 
 }
 

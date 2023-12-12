@@ -17,7 +17,7 @@
 
         textbox.style.color = "green"; // mengganti DOM CSS, color text jadi merah ketika di klik (jika menulis style, maka akan muncul keseluruhan syntax CSS)
         span.innerHTML = textBox.value; // membaca isi text box, dan mengubah tulisan non input
-    } 
+    }
     </script>
 
 </head>

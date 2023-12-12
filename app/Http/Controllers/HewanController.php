@@ -43,25 +43,6 @@ class HewanController extends Controller
 
     }
 
-    // Cara kedua dengan if else dibawah ini
-    // public function store(Request $request){
-    //     // insert data ke table hewan
-    //     $tersedia = '0'; // default value
-
-    //     if ($request->jumlahhewan > 0) {
-    //         $tersedia = '1';
-    //     }
-
-    //     DB::table('hewan')->insert([
-    //         'namahewan' => $request->namahewan,
-    //         'jumlahhewan' => $request->jumlahhewan,
-    //         'tersedia' => $tersedia
-    //     ]);
-
-    //     // alihkan halaman ke halaman hewan
-    //     return redirect('/database-hewan');
-    // }
-
     // method untuk edit data hewan
     public function edit($id)
     {

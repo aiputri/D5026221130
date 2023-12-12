@@ -9,7 +9,6 @@
 
 	<br/>
 	<br/>
-    <br/>
 
 	<form action="/pegawai/store" method="post" class="form-horizontal">
         {{ csrf_field() }}

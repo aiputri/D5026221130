@@ -136,15 +136,8 @@ Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
 Route::get('/karyawan/tambah','App\Http\Controllers\KaryawanController@tambah');
 Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
 
-// edit data karyawan
-Route::get('/karyawan/edit/{id}','App\Http\Controllers\KaryawanController@edit');
-Route::post('/karyawan/update','App\Http\Controllers\KaryawanController@update');
-
 // hapus data karyawan
 Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
 
 // cari karyawan
 Route::get('/karyawan/cari','App\Http\Controllers\KaryawanController@cari');
-
-// view karyawan
-Route::get('/karyawan/view/{id}','App\Http\Controllers\KaryawanController@view');

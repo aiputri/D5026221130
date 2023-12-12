@@ -18,6 +18,18 @@
         <input type="submit" value="CARI" class="btn btn-primary mt-4">
 	</form><br/>
 
+    @if(session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+    @endif
+
+    @if(session('success'))
+        <div class="alert alert-primary">
+            {{ session('success') }}
+        </div>
+    @endif
+
 	<table class="table table-striped table-hover">
 		<tr>
 			<th>Kode Pegawai</th>
@@ -33,10 +45,6 @@
             <td>{{ $p->divisi }}</td>
             <td>{{ strtolower($p->departemen) }}</td>
 			<td>
-                <!--<a href="/karyawan/view/{{ $p->kodepegawai}}" class="btn btn-success">View</a>
-
-				<a href="/karyawan/edit/{{ $p->kodepegawai}}" class="btn btn-warning">Edit</a>-->
-
 				<a href="/karyawan/hapus/{{ $p->kodepegawai}}" class="btn btn-danger">Hapus Data</a>
 			</td>
 		</tr>

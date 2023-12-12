@@ -12,12 +12,6 @@
 
 	<form action="/database-hewan/store" method="post" class="form-horizontal">
         {{ csrf_field() }}
-        <!--<div class="input-group mb-3">
-            <label for="kodehewan" class="col-sm-2 control-label">Kode Hewan</label>
-            <div class="col-sm-6">
-                <input type="number" name="kodehewan" class="form-control" id="kodehewan" placeholder="Masukan Kode Hewan ..." required>
-            </div>
-        </div>-->
 
         <div class="input-group mb-3">
             <label for="namahewan" class="col-sm-2 control-label">Nama Hewan</label>
@@ -32,17 +26,6 @@
                 <input type="number" name="jumlahhewan" class="form-control" id="jumlahhewan" placeholder="Masukan Jumlah Hewan ..." required>
             </div>
         </div>
-
-        <!--<div class="input-group mb-3">
-            <label for="tersedia" class="col-sm-2 control-label">Apakah Tersedia</label>
-            <div class="col-sm-6">
-                <select name="tersedia" class="form-select form-control" style="width:100%" required>
-                    <option value="">Pilih Ketersediaan Hewan</option>
-                    <option value="1">Tersedia</option>
-                    <option value="0">Tidak Tersedia</option>
-                </select>
-            </div>
-        </div>-->
 
         <div class="form-group row">
             <div class="col-sm-offset-2 col-sm-10">

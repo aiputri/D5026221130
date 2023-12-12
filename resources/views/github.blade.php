@@ -10,20 +10,20 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon"> 
+  <link href="{{asset ('Website/assets/img/favicon.png')}}" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{asset ('Website/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset ('Website/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset ('Website/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset ('Website/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset ('Website/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{asset ('Website/assets/css/style.css')}}" rel="stylesheet">
 
 </head>
 
@@ -277,7 +277,7 @@
 
             <div class="swiper-slide">
               <div class="motivation-item">
-                <img src="assets/img/motivations/motivations-1.jpeg" class="motivation-img" alt="">
+                <img src="{{asset ('Website/assets/img/motivations/motivations-1.jpeg')}}" class="motivation-img" alt="">
                 <h3>Imam Syafi'i</h3>
                 <h4>Mazhab Syafi'i</h4>
                 <p>
@@ -290,7 +290,7 @@
 
             <div class="swiper-slide">
               <div class="motivation-item">
-                <img src="assets/img/motivations/motivations-2.jpeg" class="motivation-img" alt="">
+                <img src="{{asset ('Website/assets/img/motivations/motivations-2.jpeg')}}" class="motivation-img" alt="">
                 <h3>Sutan Sjahrir</h3>
                 <h4>Former Prime Minister of Indonesia</h4>
                 <p>
@@ -303,7 +303,7 @@
 
             <div class="swiper-slide">
               <div class="motivation-item">
-                <img src="assets/img/motivations/motivations-3.jpeg" class="motivation-img" alt="">
+                <img src="{{asset ('Website/assets/img/motivations/motivations-3.jpeg')}}" class="motivation-img" alt="">
                 <h3>R.A Kartini</h3>
                 <h4>Hero of Women's Emancipation</h4>
                 <p>
@@ -316,7 +316,7 @@
 
             <div class="swiper-slide">
               <div class="motivation-item">
-                <img src="assets/img/motivations/motivations-4.jpeg" class="motivation-img" alt="">
+                <img src="{{asset ('Website/assets/img/motivations/motivations-4.jpeg')}}" class="motivation-img" alt="">
                 <h3>Thomas Alva Edison</h3>
                 <h4>Inventor of the Lamp</h4>
                 <p>
@@ -329,7 +329,7 @@
 
             <div class="swiper-slide">
               <div class="motivation-item">
-                <img src="assets/img/motivations/motivations-5.jpeg" class="motivation-img" alt="">
+                <img src="{{asset ('Website/assets/img/motivations/motivations-5.jpeg')}}" class="motivation-img" alt="">
                 <h3>Ali bin Abi Thalib</h3>
                 <h4>Khulafaur Rosyidin</h4>
                 <p>
@@ -439,7 +439,7 @@
         &copy; Copyright <strong><span>Putri</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by <a href="https://www.w3schools.com/">W3Schools</a>
+        Designed by <a href=" ">Bootstrap</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -447,15 +447,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="{{asset ('Website/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{asset ('Website/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset ('Website/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset ('Website/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset ('Website/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset ('Website/assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset ('Website/assets/js/main.js')}}"></script>
 
 </body>
 

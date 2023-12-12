@@ -14,17 +14,17 @@
 
         <div class="row mb-3 text-light"><h5>Payment Method</h5></div>
 
-        <div class="row bg-secondary  mb-3"> 
+        <div class="row bg-secondary  mb-3">
             <div class="col-2 p-3 mt-2">
-                <img src="mastercard.png" class="rounded" width="40px" height="40px">
+                <img src="{{asset('soal/mastercard.png')}}" class="rounded" width="40px" height="40px">
             </div>
             <div class="col-8 p-4 mt-2 text-light">Mastercard</div>
             <div class="col-2 p-4 mt-2"></div>
         </div>
 
-        <div class="row bg-secondary mb-3"> 
+        <div class="row bg-secondary mb-3">
             <div class="col-2 p-3 mt-2 text-light">
-                <img src="cod.png" class="rounded" width="40px" height="40px">
+                <img src="{{asset('soal/cod.png')}}" class="rounded" width="40px" height="40px">
             </div>
             <div class="col-8 p-4 mt-2 text-light">Cash on delivery</div>
             <div class="col-2 p-4 mt-2 text-light"></div>

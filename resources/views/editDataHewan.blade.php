@@ -29,9 +29,9 @@
         <div class="input-group mb-3">
             <label for="jumlahhewan" class="col-sm-2 control-label">Jumlah Hewan</label>
             <div class="col-sm-6">
-                <input type="number" required="required" name="jumlahhewan" class="form-control" value="{{ $p->jumlahhewan}}">
+                <input type="number" required="required" name="jumlahhewan" class="form-control" value="{{ $p->jumlahhewan }}">
             </div>
-        </div>
+        </div>        
 
         <div class="form-group row">
             <div class="col-sm-offset-2 col-sm-10">

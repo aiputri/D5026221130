@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="{{asset('css/mystyle.css')}}">
     <style>
         h2 {
             color: rgb(90, 98, 238);
